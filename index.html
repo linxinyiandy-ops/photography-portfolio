@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="XinYi Andy Lam 的个人摄影作品集。"
+    />
+    <title>XinYi Andy Lam 摄影作品集</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="XinYi Andy Lam home">
+        <span class="brand-mark" aria-hidden="true">AL</span>
+        <span class="brand-name">XinYi Andy Lam</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" aria-label="主导航">
+        <a href="#top">首页</a>
+        <div class="nav-group">
+          <button class="places-button" type="button" aria-expanded="false">
+            地点
+          </button>
+          <div class="places-menu" data-place-menu></div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <h1 id="hero-title">把经过的光，留成照片。</h1>
+        </div>
+        <figure class="hero-visual reveal">
+          <img
+            src="./assets/photos/hong-kong/a-18-2-large.jpg"
+            alt="香港山海与大桥的全景照片。"
+          />
+        </figure>
+      </section>
+
+      <section class="collection-intro reveal" id="collections" aria-labelledby="collections-title">
+        <div>
+          <p class="eyebrow">作品集</p>
+          <h2 id="collections-title">地点</h2>
+        </div>
+      </section>
+
+      <section class="collection-grid" data-collection-grid aria-label="地点作品入口"></section>
+    </main>
+
+    <div class="collection-view" data-collection-view aria-hidden="true">
+      <div class="collection-panel">
+        <button class="collection-close" type="button" aria-label="返回地点">返回</button>
+        <header class="collection-view-header">
+          <p class="eyebrow" data-collection-label></p>
+          <h2 data-collection-title></h2>
+        </header>
+        <div class="collection-photo-list" data-collection-photos></div>
+      </div>
+    </div>
+
+    <div class="lightbox" data-lightbox aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="关闭照片">关闭</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="上一张">上一张</button>
+      <figure class="lightbox-frame">
+        <img alt="" data-lightbox-image />
+        <figcaption data-lightbox-caption></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="下一张">下一张</button>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
